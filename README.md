@@ -13,7 +13,7 @@
 ### Post-installation
 - Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed as chroot as the final stage of installation.
 - Install GNOME using `sudo pacman -S gnome` and select defaults for everything. Note: all installation related to GDM is optional. i3 will be the primary window manager whereas GDM is a backup.
-- Run `sudo systemctl enable gdm.service` and then optionally `sudo systemctl start gdm.service`. This will take you into GNOME Desktop Manager and launch it by default on startup.
+- (**Optional**) Run `sudo systemctl enable gdm.service` and then `sudo systemctl start gdm.service`. This will take you into GNOME Desktop Manager and launch it by default on startup.
 - To get SSH working, run `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
 - Next, it is time to install Git. Run `sudo pacman -S --needed git base-devel`.
 - Git is a prerequisite for installing yay. To install yay that run the following:
@@ -22,7 +22,7 @@
 - Next install Xrdp using the following instructions:
   - https://wiki.archlinux.org/title/Xrdp
     - Install `xrdp` and `xorgxrdp` using `yay`.
-    - Create `~/.xinitrc` and add the one-liner `exec gnome-session`.
+    - (**Optional**) Create `~/.xinitrc` and add the one-liner `exec gnome-session`. Or, `exec i3` if GDM is not being used.
     - Run `sudo systemclt set-default multi-user.target`. This will allow for multiple user sessions to be exist at once.
     - Reboot using `sudo reboot`.
   - Remote desktop should be working for GDM. Next we will need to configure i3 for Xrdp.
