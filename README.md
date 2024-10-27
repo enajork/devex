@@ -1,5 +1,6 @@
 # Creating a developer workflow for enhanced productivity
 ## Installing Arch, Xrdp, & i3
+Note: Xrdp is not required if you intend on running Arch directly as your primary OS and do not require remote access to your Arch install.
 - Create Arch installation media USB.
 - Use UEFI to boot from USB.
 - Run `archinstall` command to begin installation.
