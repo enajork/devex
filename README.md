@@ -20,3 +20,8 @@
   - `git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si`
 - Next install Xrdp using the following instructions:
   - https://wiki.archlinux.org/title/Xrdp
+    - Install `xrdp` and `xorgxrdp` using `yay`
+    - Create `~/.xinitrc` and add the one-liner `exec gnome-session`
+    - Run `sudo systemclt set-default multi-user.target`
+    - Reboot using `sudo reboot`
+  - Remote desktop should be working for GDM. Next we will need to configure i3.
