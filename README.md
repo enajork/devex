@@ -1,4 +1,4 @@
-# My Linux Journey
+# Creating a developer workflow for enhanced productivity
 ## Installing Arch
 - Create Arch installation media USB.
 - Use UEFI to boot from USB.
