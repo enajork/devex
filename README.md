@@ -1,5 +1,5 @@
 # Creating a developer workflow for enhanced productivity
-## Installing Arch
+## Installing Arch, Xrdp, & i3
 - Create Arch installation media USB.
 - Use UEFI to boot from USB.
 - Run `archinstall` command to begin installation.
