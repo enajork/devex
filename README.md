@@ -10,7 +10,7 @@ Note: Xrdp is not required if you intend on running Arch directly as your primar
   - `station wlan0 get-networks`
   - `station wlan0 connect SSID`
 - Select preferences in `archinstall` script accordingly and begin installation.
-- Most recently I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
+- Most recently, I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
 ### Post-installation
 - Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed as chroot as the final stage of installation.
 - Install GNOME using `sudo pacman -S gnome` and select defaults for everything. Note: all installation related to GDM is optional. i3 will be the primary window manager whereas GDM is a backup.
@@ -30,5 +30,11 @@ Note: Xrdp is not required if you intend on running Arch directly as your primar
 ### i3
 - Run `sudo pacman -S i3` to install i3.
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
-That's it. Arch, Xrdp, and i3 have been installed. The "ricing" (customization) of the system can now begin.
+That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The "ricing" (customization) of the system can now begin.
 ## Ricing
+Pretty much just followed this typecraft video: https://youtu.be/wXZgUudR41I?list=PLsz00TDipIffGKMW4hmzmwXTvARXyJMn8
+The only exception is that I installed kitty instead of alacritty.
+## Neovim setup
+TBD
+## tmux setup
+TBD
