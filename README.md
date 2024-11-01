@@ -12,7 +12,7 @@ Note: Xrdp is not required if you intend on running Arch directly as your primar
 - Select preferences in `archinstall` script accordingly and begin installation.
 - Most recently, I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
 ### Post-installation
-- Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed as chroot as the final stage of installation.
+- Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed in chroot as the final stage of installation.
 - Install GNOME using `sudo pacman -S gnome` and select defaults for everything. Note: all installation related to GDM is optional. i3 will be the primary window manager whereas GDM is a backup.
 - (**Optional**) Run `sudo systemctl enable gdm.service` and then `sudo systemctl start gdm.service`. This will take you into GNOME Desktop Manager and launch it by default on startup.
 - To get SSH working, run `sudo pacman -S openssh`, `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
