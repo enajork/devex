@@ -29,8 +29,7 @@ Note: Xrdp is not required if you intend on running Arch directly as your primar
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The customization of the system can now begin.
 ## Customization
-Pretty much just followed this typecraft video: https://youtu.be/wXZgUudR41I?list=PLsz00TDipIffGKMW4hmzmwXTvARXyJMn8
-The only exception is that I installed kitty instead of alacritty.
+TBD
 ## Neovim setup
 TBD
 ## tmux setup
