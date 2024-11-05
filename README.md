@@ -29,7 +29,8 @@ Note: Xrdp is not required if you intend on running Arch directly as your primar
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The customization of the system can now begin.
 ## Customization
-TBD
+- Install terminal, status bar, and window switcher/application launcher `yay -Sy kitty polybar rofi`.
+- Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles from <link> in your home directory. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo. 
 ## Neovim setup
 TBD
 ## tmux setup
