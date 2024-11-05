@@ -35,3 +35,6 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 TBD
 ## tmux setup
 TBD
+
+## Known issues
+- picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16
