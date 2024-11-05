@@ -36,5 +36,10 @@ TBD
 ## tmux setup
 TBD
 
+## Future improvements
+- Create dotfiles repo
+- Make installation script to automate setup
+- Use docker for automated testing of install script
+
 ## Known issues
 - picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16
