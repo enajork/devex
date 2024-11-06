@@ -43,6 +43,9 @@ TBD
 ## tmux setup
 TBD
 
+## Handy links
+- https://i3wm.org/docs/debugging.html
+
 ## Future improvements
 - Create dotfiles repo
 - Make installation script to automate setup
