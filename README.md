@@ -30,7 +30,10 @@ Note: Xrdp is not required if you intend on running Arch directly as your primar
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The customization of the system can now begin.
 ## Customization
 - Install terminal, status bar, and window switcher/application launcher `yay -Sy kitty polybar rofi zsh`.
-- Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo. 
+- Install Oh My Zsh with `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
+- Run `yay -S --noconfirm zsh-theme-powerlevel10k-git && echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc` to install powerlevel10k.
+- Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo.
+- Run `p10k configure`.
 ## Neovim setup
 TBD
 ## tmux setup
@@ -43,3 +46,4 @@ TBD
 
 ## Known issues
 - picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16
+- Some picom issue that causes windows to disappear when they are tiled with transparency enabled
