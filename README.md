@@ -15,7 +15,7 @@ Note: Xrdp is not required if you intend on running Arch directly as your primar
 - Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed in chroot as the final stage of installation.
 - To get SSH working, run `sudo pacman -S openssh`, `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
 - Next, it is time to install Git. Run `sudo pacman -S --needed git base-devel`.
-- Git is a prerequisite for installing yay. To install yay that run the following:
+- Git is a prerequisite for installing yay. To install yay, run the following:
   - `git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si`
 ### Xrdp
 - Next install Xrdp using the following instructions:
