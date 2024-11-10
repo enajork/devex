@@ -57,4 +57,4 @@ TBD
 
 ## Known issues
 - picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16
-- Some picom issue that causes windows to disappear when they are tiled with transparency enabled
+- ~~Some picom issue that causes windows to disappear when they are tiled with transparency enabled~~ Fixed by using `use-damage = false;` setting.
