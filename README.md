@@ -39,6 +39,10 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
   - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 - Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo.
 - Run `p10k configure` to setup powerlevel10k.
+## Mutagen
+More details at https://mutagen.io/. Think of this as a more performant `sshfs` (https://github.com/libfuse/sshfs). It enables us to reap the benefits of our local editor customization even on remote machines. We can mount a remote machine's file system and edit as if the files were located on the client using our neovim config and more.
+### Installation
+- Instructions can be found [here](https://mutagen.io/documentation/introduction/installation)
 ## Neovim setup
 TBD
 
