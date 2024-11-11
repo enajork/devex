@@ -42,7 +42,14 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 ## Mutagen
 More details at https://mutagen.io/. Think of this as a more performant `sshfs` (https://github.com/libfuse/sshfs). It enables us to reap the benefits of our local editor customization even on remote machines. We can mount a remote machine's file system and edit as if the files were located on the client using our neovim config and more.
 ### Installation
-- Instructions can be found [here](https://mutagen.io/documentation/introduction/installation)
+- Installation instructions can be found [here](https://mutagen.io/documentation/introduction/installation).
+- Assuming you are not using `homebrew`, run `curl -O -L https://github.com/mutagen-io/mutagen/releases/download/v0.18.0/mutagen_linux_amd64_v0.18.0.tar.gz` (replace version and architecture accordingly).
+- Extract the executable to the user's local binary directory by running `tar -xzf mutagen_linux_amd64_v0.18.0.tar.gz -C /usr/local/bin`.
+- Remove leftover tarball with `rm mutagen_linux_amd64_v0.18.0.tar.gz`.
+  - Alternatively, install with the one-liner `curl -O -L https://github.com/mutagen-io/mutagen/releases/download/v0.18.0/mutagen_linux_amd64_v0.18.0.tar.gz && tar -xzf mutagen_linux_amd64_v0.18.0.tar.gz -C /usr/local/bin && rm mutagen_linux_amd64_v0.18.0.tar.gz`.
+### Usage
+- Usage instructions can be found [here](https://mutagen.io/documentation/introduction/getting-started).
+- To create a sync session run `mutagen sync create --name=<session name> <client_dir> <username>@<host>:<remote_dir>`. This will sync the remote directory to the client directory specified. It can take a few minutes for the sync to complete.
 ## Neovim setup
 TBD
 
