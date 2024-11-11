@@ -41,8 +41,6 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Run `p10k configure` to setup powerlevel10k.
 ## Neovim setup
 TBD
-## tmux setup
-TBD
 
 ## Handy links
 - https://i3wm.org/docs/debugging.html
