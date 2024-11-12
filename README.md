@@ -41,6 +41,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Run `p10k configure` to setup powerlevel10k.
 ## ~~Mutagen~~
 ~~More details at https://mutagen.io/. Think of this as a more performant `sshfs` (https://github.com/libfuse/sshfs). It enables us to reap the benefits of our local editor customization even on remote machines. We can mount a remote machine's file system and edit as if the files were located on the client using our neovim config and more.~~
+
 After some testing, Mutagen is not suitable for my purposes. It poses a security risk, consumes too much disk space, and initial syncing takes too long. SSHFS is also not a viable option.
 ### ~~Installation~~
 - ~~Installation instructions can be found [here](https://mutagen.io/documentation/introduction/installation).~~
