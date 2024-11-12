@@ -59,3 +59,9 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 
 ## Exploration
 - I did some evaluation of the viability of [mutagen](https://mutagen.io), but I concluded that it was not going to be appropriate for my use case. Rather than mounting remote machines to my local file system, I will install my neovim config on the remote machines and use neovim there. This makes more sense for my purposes, but it might not be the same for you. I also lightly explore [remote-sshfs.nvim](https://github.com/nosduco/remote-sshfs.nvim), but that seems too new/unstable to be of use for me.
+
+## Inspirations
+- https://github.com/ThePrimeagen
+- https://github.com/typecraft-dev/
+- https://github.com/JaKooLit
+- https://github.com/jdhao/nvim-config
