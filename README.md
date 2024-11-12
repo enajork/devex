@@ -63,6 +63,9 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 ### Mutagen
 I did some evaluation of the viability of [mutagen](https://mutagen.io), but I concluded that it was not going to be appropriate for my use case. Rather using mutagen to edit remote files locally, I will install my neovim config on the remote machines and use neovim there. This makes more sense for my purposes, but it might not be the same for you. I also lightly explore [remote-sshfs.nvim](https://github.com/nosduco/remote-sshfs.nvim), but that seems too new/unstable to be of use for me. There could be other neovim plugins or approaches to get the functionality that I desire, but I am pausing my search for the time being. Mutagen consumes too much disk space, poses too much of a security risk, and suffers from long initialization time. For those reason, I chose not to utilize it as a core component of my development workflow.
 
+### Aerospace
+I still use a Mac laptop whenever I am on the go. While the level of customization is not as much as with Linux, it still possible to use a tiling window manager and all of the terminal & vim enhancements. Aerospace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose well.
+
 ## Inspirations
 - https://github.com/ThePrimeagen
 - https://github.com/typecraft-dev/
