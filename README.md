@@ -40,7 +40,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo.
 - Run `p10k configure` to setup powerlevel10k.
 ## Neovim setup
-TBD
+- Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
 ## Handy links
 - https://i3wm.org/docs/debugging.html
