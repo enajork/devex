@@ -66,6 +66,11 @@ I did some evaluation of the viability of [mutagen](https://mutagen.io), but I c
 ### Aerospace
 I still use a Mac laptop whenever I am on the go. While the level of customization is not as much as with Linux, it still possible to use a tiling window manager and all of the terminal & vim enhancements. Aerospace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose well.
 
+### kitty on macOS
+I've been using iTerm2 for the past few years, but finally switched to using kitty on macOS. To install, either run with `curl` or `brew`:
+- `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
+- `brew install --cask kitty`
+
 ## Inspirations
 - https://github.com/ThePrimeagen
 - https://github.com/typecraft-dev/
