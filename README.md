@@ -71,6 +71,9 @@ I've been using iTerm2 for the past few years, but finally switched to using kit
 - `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
 - `brew install --cask kitty`
 
+### stow on macOS
+Install GNU stow on macOS using `brew install stow`.
+
 ## Inspirations
 - https://github.com/ThePrimeagen
 - https://github.com/typecraft-dev/
