@@ -1,6 +1,7 @@
 # Creating a developer workflow for enhanced productivity
 ## Installing Arch, Xrdp, & i3
 Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
+
 Details on how to install Arch can be found [here](https://wiki.archlinux.org/title/Installation_guide).
 - Create Arch installation media USB.
 - Use UEFI to boot from USB.
