@@ -31,7 +31,7 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The customization of the system can now begin.
 ## Customization
-- Install terminal, status bar, and window switcher/application launcher `yay -Sy adwaita-dark fastfetch fzf kitty polybar rofi tmux zsh`.
+- Install terminal, status bar, and window switcher/application launcher `yay -Sy fastfetch fzf kitty polybar rofi tmux zsh`.
 - Install tmux package manager (tpm) - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Install Oh My Zsh with `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
 - Run `yay -S --noconfirm zsh-theme-powerlevel10k-git && echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc` to install powerlevel10k.
@@ -41,6 +41,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
   - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 - Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo.
 - Run `p10k configure` to setup powerlevel10k.
+- Install dark mode https://wiki.archlinux.org/title/Dark_mode_switching
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
