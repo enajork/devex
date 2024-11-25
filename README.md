@@ -57,6 +57,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Consider using https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
 - Switch away from p10k
 - ~~Implement mouse warping~~ seems like using RDP might make this impossible
+- Switch to btrfs instead of ext4
 
 ## Known issues
 - picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16 - still having this issue but it is not severe enough to ditch picom.
