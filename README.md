@@ -31,7 +31,7 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The customization of the system can now begin.
 ## Customization
-- Install terminal, status bar, and window switcher/application launcher `yay -Sy fastfetch fzf kitty polybar rofi tmux zsh`.
+- Install terminal, status bar, and window switcher/application launcher `yay -Sy fastfetch fzf kitty picom polybar rofi tmux zsh`.
 - Install tmux package manager (tpm) - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Install Oh My Zsh with `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
 - Run `yay -S --noconfirm zsh-theme-powerlevel10k-git && echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc` to install powerlevel10k.
@@ -50,32 +50,29 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - https://i3wm.org/docs/debugging.html
 
 ## Future improvements
-- Make installation script to automate setup
-- Use docker for automated testing of install script
+- Make installation script to automate setup - might consider using Ansible
+- ~~Use docker for automated testing of install script~~ Docker is not the right tool for this. Using Hyper V instead.
 - Fix picom settings
 - Beautify things
 - Consider using https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
 - Switch away from p10k
-- Implement mouse warping
+- ~~Implement mouse warping~~ seems like using RDP might make this impossible
 
 ## Known issues
-- picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16
+- picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16 - still having this issue but it is not severe enough to ditch picom.
 - ~~Some picom issue that causes windows to disappear when they are tiled with transparency enabled~~ Fixed by using `use-damage = false;` setting.
-- picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)). Very annoying. Stopped using picom because of this.
+- ~~picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)). Very annoying. Stopped using picom because of this.~~ Fixed by installing gtk.
 
-## Exploration
-### Mutagen
-I did some evaluation of the viability of [mutagen](https://mutagen.io), but I concluded that it was not going to be appropriate for my use case. Rather using mutagen to edit remote files locally, I will install my neovim config on the remote machines and use neovim there. This makes more sense for my purposes, but it might not be the same for you. I also lightly explore [remote-sshfs.nvim](https://github.com/nosduco/remote-sshfs.nvim), but that seems too new/unstable to be of use for me. There could be other neovim plugins or approaches to get the functionality that I desire, but I am pausing my search for the time being. Mutagen consumes too much disk space, poses too much of a security risk, and suffers from long initialization time. For those reason, I chose not to utilize it as a core component of my development workflow.
-
+## macOS
 ### Aerospace
 I still use a Mac laptop whenever I am on the go. While the level of customization is not as much as with Linux, it still possible to use a tiling window manager and all of the terminal & vim enhancements. Aerospace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose well.
 
-### kitty on macOS
+### kitty
 I've been using iTerm2 for the past few years, but finally switched to using kitty on macOS. To install, either run with `curl` or `brew`:
 - `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
 - `brew install --cask kitty`
 
-### stow on macOS
+### stow
 Install GNU stow on macOS using `brew install stow`.
 
 ## Inspirations
