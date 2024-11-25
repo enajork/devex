@@ -42,6 +42,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo.
 - Run `p10k configure` to setup powerlevel10k.
 - Install dark mode https://wiki.archlinux.org/title/Dark_mode_switching
+  - `yay -S qt6-base qt5-base gtk4 gtk3 gnome-themes-extra adwaita-qt5-git adwaita-qt6-git`
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
