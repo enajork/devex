@@ -46,6 +46,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 
 ## Pipewire audio over XRDP
 - `yay -S pipewire-module-xrdp`
+- Add `exec --no-startup-id /usr/lib/pipewire-module-xrdp/load_pw_modules.sh` to i3 config
 
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
