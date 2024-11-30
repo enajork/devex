@@ -70,8 +70,8 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - ~~picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)). Very annoying. Stopped using picom because of this.~~ Fixed by installing gtk.
 
 ## macOS
-### Aerospace
-I still use a Mac laptop whenever I am on the go. While the level of customization is not as much as with Linux, it still possible to use a tiling window manager and all of the terminal & vim enhancements. Aerospace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose well.
+### AeroSpace
+I still use a Mac laptop whenever I am on the go. While the level of customization is not as much as with Linux, it still possible to use a tiling window manager and all of the terminal & vim enhancements. AeroSpace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose well.
 
 ### kitty
 I've been using iTerm2 for the past few years, but finally switched to using kitty on macOS. To install, either run with `curl` or `brew`:
@@ -80,6 +80,11 @@ I've been using iTerm2 for the past few years, but finally switched to using kit
 
 ### stow
 Install GNU stow on macOS using `brew install stow`.
+
+### Tailscale & RDP
+- Install [Tailscale](https://tailscale.com/download/) on Linux remote machine and on Mac client.
+- Install [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) on Mac.
+- Now you can use Windows App to remote desktop into your Arch Linux machine. From very limited testing, it seems like power consumption of using remote desktop is better than using a local workflow with AeroSpace, kitty, and Chrome. Offloading more processing to the server can save battery life depending on the task. This also reinforces the decision to go with a Xorg + RDP setup because it requires less bandwidth/power than VNC (remoting can be achieved with less resources). RDP and Xorg are generally more mature and robust than Wayland and VNC. Even if my primary use case was to use Linux locally instead of remotely, I would still probably not choose Wayland.
 
 ## Inspirations
 - https://github.com/ThePrimeagen
