@@ -43,6 +43,10 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Run `p10k configure` to setup powerlevel10k.
 - Install dark mode https://wiki.archlinux.org/title/Dark_mode_switching
   - `yay -S qt6-base qt5-base gtk4 gtk3 gnome-themes-extra adwaita-qt5-git adwaita-qt6-git`
+
+## Pipewire audio over XRDP
+- `yay -S pipewire-module-xrdp`
+
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
