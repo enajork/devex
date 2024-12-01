@@ -73,7 +73,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 ### AeroSpace
 I still use a Mac laptop whenever I am on the go. While the level of customization is not as much as with Linux, it still possible to use a tiling window manager and all of the terminal & vim enhancements. AeroSpace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose well.
 
-On a slightly related note: I did mess around a bit with dual booting Fedora Asahi Remix (an M1 compatible distro), but moved away from it ultimately due to poor battery performance with that setup. It is also my main Mac machine, so it lets me keep up with changes to macOS.
+On a slightly related note: I did mess around a bit with dual booting Fedora Asahi Remix (an M1 compatible distro), but moved away from it ultimately due to poor battery performance with that setup. My laptop is also my main Mac machine, so it lets me stay current with the macOS.
 
 ### kitty
 I've been using iTerm2 for the past few years, but finally switched to using kitty on macOS. To install, either run with `curl` or `brew`:
