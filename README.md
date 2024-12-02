@@ -54,14 +54,17 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 ## Handy links
 - https://i3wm.org/docs/debugging.html
 
+## TODO
+- Make it easier to assign main monitor in i3 config (possibly via env var - digging into [this](https://github.com/i3/i3/issues/5077) thread might help)
+
 ## Future improvements
 - Make installation script to automate setup - might consider using Ansible
 - ~~Use docker for automated testing of install script~~ Docker is not the right tool for this. Using Hyper V instead.
-- Fix picom settings
-- Beautify things
+- ~~Fix picom settings~~
+- ~~Beautify things~~
 - Consider using https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
 - Switch away from p10k
-- ~~Implement mouse warping~~ seems like using RDP might make this impossible
+- ~~Implement mouse warping~~ Seems like using RDP might make this impossible
 - Switch to btrfs instead of ext4
 
 ## Known issues
