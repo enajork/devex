@@ -55,7 +55,8 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - https://i3wm.org/docs/debugging.html
 
 ## TODO
-- Make it easier to assign main monitor in i3 config (possibly via env var - digging into [this](https://github.com/i3/i3/issues/5077) thread might help)
+- Make it easier to assign main monitor in i3 config (possibly via env var - digging into [this](https://github.com/i3/i3/issues/5077) thread might help).
+- Window focus needs to be more obvious. Using xwindow in polybar for the time being.
 
 ## Future improvements
 - Make installation script to automate setup - might consider using Ansible
