@@ -72,6 +72,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16 - still having this issue but it is not severe enough to ditch picom.
 - ~~Some picom issue that causes windows to disappear when they are tiled with transparency enabled~~ Fixed by using `use-damage = false;` setting.
 - ~~picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)). Very annoying. Stopped using picom because of this.~~ Fixed by installing gtk.
+- Mouse warping does not work while using RDP
 
 ## macOS
 ### AeroSpace
