@@ -56,7 +56,10 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - https://i3wm.org/docs/debugging.html
 
 ## TODO
-- Window focus needs to be more obvious. Using xwindow in polybar for the time being.
+- Window focus needs to be more obvious. Using xwindow in polybar for the time being. Waiting for PRs to i3 to get merged to fix this. Would rather not have to use something like [xborder](https://github.com/deter0/xborder).
+  - https://github.com/i3/i3/issues/4292
+  - https://github.com/i3/i3/pull/5384
+  - https://github.com/i3/i3/pull/5944 (most recently active - 1 week ago)
 - Make installation script to automate setup
 
 ## Future improvements
