@@ -39,8 +39,8 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
   - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
   - `git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions`
   - `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-- Configure dotfile using stow (`yay -Sy stow`). First, clone dotfiles in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo.
-- Run `p10k configure` to setup powerlevel10k or `stow p10k` from dotfiles directory.
+- Configure dotfile using stow (`yay -Sy stow`). First, clone [dotfiles](https://github.com/enajork/dotfiles) in your home directory from <link>. Then, run `stow <config_name>` (i.e `stow i3`) for each directory in the repo.
+- Run `p10k configure` to setup powerlevel10k or `stow p10k` from [dotfiles](https://github.com/enajork/dotfiles) directory.
 - Install dark mode https://wiki.archlinux.org/title/Dark_mode_switching
   - `yay -S qt6-base qt5-base gtk4 gtk3 gnome-themes-extra adwaita-qt5-git adwaita-qt6-git`
   - Add dark mode exports to Zsh as described in the Arch Wiki page (or use `stow zsh`).
@@ -77,7 +77,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 
 ## macOS
 ### AeroSpace
-I still use a Mac laptop whenever I am on the go. While macOS does not offer the same level of customization, it still possible to use a tiling window manager and some of the same dotfiles. kitty, nvim, p10, zsh and tmux are all transferable. AeroSpace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose.
+I still use a Mac laptop whenever I am on the go. While macOS does not offer the same level of customization, it still possible to use a tiling window manager and some of the same [dotfiles](https://github.com/enajork/dotfiles). kitty, nvim, p10, zsh and tmux are all transferable. AeroSpace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose.
 
 On a slightly related note: I toyed with dual booting Fedora Asahi Remix (an M1 compatible distro), but quickly moved away from it. Ultimately, poor battery performance was my reason for switching back to macOS. My personal laptop is the only Mac I use with any semblance of regularity, so it is nice to have a machine to check out the latest features on Mac as well.
 
