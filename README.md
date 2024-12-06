@@ -31,7 +31,7 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The next step is customization.
 ## Customization
-- Install some dependencies - `yay -Sy fastfetch fzf kitty picom polybar rofi tmux xorg-xrdb zsh`.
+- Install some dependencies - `yay -Sy fastfetch fzf kitty picom polybar rofi tmux xorg-xrdb xclip zsh`.
 - Install tmux package manager (tpm) - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Install Oh My Zsh with `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
 - Run `yay -S --noconfirm zsh-theme-powerlevel10k-git && echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc` to install powerlevel10k.
