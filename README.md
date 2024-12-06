@@ -93,9 +93,3 @@ Install GNU stow on macOS using `brew install stow`.
 - Install [Tailscale](https://tailscale.com/download/) on Linux remote machine and on Mac client.
 - Install [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) on Mac.
 - Now you can use Windows App to remote desktop into your Arch Linux machine. From very limited testing, it seems like power consumption of using remote desktop is better than using a local workflow with AeroSpace, kitty, and Chrome. Offloading more processing to the server can save battery life depending on the task. This also reinforces the decision to go with a Xorg + RDP setup because it requires less bandwidth/power than VNC. RDP and Xorg are generally more mature and robust than Wayland and VNC. Even if my primary use case was to use Linux locally instead of remotely, I would still probably not choose Wayland.
-
-## Inspirations
-- https://github.com/ThePrimeagen
-- https://github.com/typecraft-dev
-- https://github.com/JaKooLit
-- https://github.com/jdhao
