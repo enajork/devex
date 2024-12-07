@@ -44,6 +44,10 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Install dark mode https://wiki.archlinux.org/title/Dark_mode_switching
   - `yay -S qt6-base qt5-base gtk4 gtk3 gnome-themes-extra adwaita-qt5-git adwaita-qt6-git`
   - Add dark mode exports to Zsh as described in the Arch Wiki page (or use `stow zsh`).
+ 
+## SSH without entering password
+- Run `ssh-keygen`.
+- Run `ssh-copy-id remote_username@remote_server_ip_address`.
 
 ## Pipewire audio over Xrdp
 - `yay -S pipewire-module-xrdp`
