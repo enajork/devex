@@ -1,4 +1,17 @@
 # Creating a developer workflow for enhanced productivity
+## What is this?
+This is a living document that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles. Later, I will convert these steps into an installation script to automate the process of setting up my dotfiles and other aspects of the desktop environment on new machines (virtual or physical).
+## Why some certain tools were used instead of others
+Rather than reinventing the wheel, I used off the shelf & open source solutions to create the desktop environment that I desired. In the same spirit of not reinventing something, I also chose not spend the time creating pros and cons lists or write verboe explanations of why specific components were chosen. I outsourced this to ChatGPT instead.
+
+1. [Why Arch](https://github.com/enajork/devex/blob/main/ARCH.md)
+2. [Why Xorg](https://github.com/enajork/devex/blob/main/XORG.md)
+3. [Why a tiling window manager](https://github.com/enajork/devex/blob/main/TILING.md)
+4. [Why RDP](https://github.com/enajork/devex/blob/main/REMOTE.md)
+
+## What this guide does not cover
+How to use your custom desktop enviroment to its full extent. In order to do that, there really is no better way than getting your hands dirty. I might write more about very specific tools or use cases in the future, but it will not be written about in this document.
+
 ## Installing Arch, Xrdp, & i3
 Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
 
