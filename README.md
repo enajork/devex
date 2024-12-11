@@ -1,6 +1,6 @@
 # Creating a developer workflow for enhanced productivity
 ## What is this?
-This is a living document that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles. Later, I will convert these steps into an installation script to automate the process of setting up my dotfiles and other aspects of the desktop environment on new machines (virtual or physical).
+This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles. Later, I will convert these steps into an installation script to automate the process of setting up my dotfiles and other aspects of the desktop environment on new machines (virtual or physical).
 ## Why some certain tools were used instead of others
 Rather than reinventing the wheel, I used off the shelf & open source solutions to create the desktop environment that I desired. In the same spirit of not reinventing something, I also chose not to spend the time creating a breakdown of pros and cons and/or write a verbose explanation of why specific components were chosen. I outsourced this to ChatGPT instead.
 
