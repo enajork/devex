@@ -9,6 +9,8 @@ Rather than reinventing the wheel, I used off the shelf & open source solutions 
 3. [Why a tiling window manager](https://github.com/enajork/devex/blob/main/TILING.md)
 4. [Why RDP](https://github.com/enajork/devex/blob/main/REMOTE.md)
 
+ChatGPT actually did a stellar job of summarizing why I chose each of the above components.
+
 ## What this guide does not cover
 How to use your custom desktop enviroment to its full extent. In order to do that, there really is no better way than getting your hands dirty. I might write more about very specific tools or use cases in the future, but it will not be written about in this document.
 
