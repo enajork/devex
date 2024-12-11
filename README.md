@@ -12,7 +12,7 @@ Rather than reinventing the wheel, I used off the shelf & open source solutions 
 ChatGPT actually did a stellar job of summarizing why I chose each of the above components.
 
 ## What this guide does not cover
-How to use your custom desktop enviroment to its full extent. In order to do that, there really is no better way than getting your hands dirty. I might write more about very specific tools or use cases in the future, but it will not be written about in this document.
+This does not cover how to use your custom desktop enviroment to its full extent. In order to do that, there really is no better way than getting your hands dirty. I might write more about very specific tools or use cases in the future, but it will not be written about in this document.
 
 ## Installing Arch, Xrdp, & i3
 Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
