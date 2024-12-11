@@ -79,6 +79,7 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
   - https://github.com/i3/i3/issues/4292
   - https://github.com/i3/i3/pull/5384
   - https://github.com/i3/i3/pull/5944 (most recently active - 1 week ago)
+  - Now looking into https://github.com/andreykaere/ixwindow too
 - Make installation script to automate setup
 
 ## Future improvements
