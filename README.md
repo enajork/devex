@@ -92,6 +92,9 @@ if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
 fi
 ```
 
+## Enable Avahi
+- `systemctl enable avahi-daemon`
+
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
