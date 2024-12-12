@@ -74,6 +74,24 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 ## Install xstart
 - `sudo pacman -S xorg xorg-server xorg-xinit`
 
+## startx on boot
+Instead of running startx from the tty, or from a display manager, run it on boot directly & automatically instead.
+- Edit the getty service for tty1 using `sudo systemctl edit getty@tty1`
+- Add the following to your configuration:
+```
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin your_username --noclear %I $TERM
+```
+Replace your_username with your actual username.
+
+Add the following to `.zshrc`
+```
+if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
+    exec startx
+fi
+```
+
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
