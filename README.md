@@ -68,6 +68,9 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - `yay -S pipewire-module-xrdp`
 - Add `exec --no-startup-id /usr/lib/pipewire-module-xrdp/load_pw_modules.sh` to i3 config
 
+## Install AMD graphics drivers
+- `sudo pacman -S mesa vulkan-radeon libva-mesa-driver libva-utils`
+
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
