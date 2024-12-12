@@ -83,9 +83,9 @@ Instead of running startx from the tty, or from a display manager, run it on boo
 ExecStart=
 ExecStart=-/usr/bin/agetty --autologin your_username --noclear %I $TERM
 ```
-Replace your_username with your actual username.
+Replace `your_username` with your actual username.
 
-Add the following to `.zshrc`
+Add the following to `.zshrc`.
 ```
 if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
     exec startx
