@@ -71,6 +71,9 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 ## Install AMD graphics drivers
 - `sudo pacman -S mesa vulkan-radeon libva-mesa-driver libva-utils`
 
+## Install xstart
+- `sudo pacman -S xorg xorg-server xorg-xinit`
+
 ## Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
