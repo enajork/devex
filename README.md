@@ -60,21 +60,21 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
   - `yay -S qt6-base qt5-base gtk4 gtk3 gnome-themes-extra adwaita-qt5-git adwaita-qt6-git`
   - Add dark mode exports to Zsh as described in the Arch Wiki page (or use `stow zsh`).
  
-## SSH without entering password
+### SSH without entering password
 - Run `ssh-keygen`.
 - Run `ssh-copy-id remote_username@remote_server_ip_address`.
 
-## Pipewire audio over Xrdp
+### Pipewire audio over Xrdp
 - `yay -S pipewire-module-xrdp`
 - Add `exec --no-startup-id /usr/lib/pipewire-module-xrdp/load_pw_modules.sh` to i3 config
 
-## Install AMD graphics drivers
+### Install AMD graphics drivers
 - `sudo pacman -S mesa vulkan-radeon libva-mesa-driver libva-utils`
 
-## Install xstart
+### Install xstart
 - `sudo pacman -S xorg xorg-server xorg-xinit`
 
-## startx on boot
+### startx on boot
 Instead of running startx from the tty, or from a display manager, run it on boot directly & automatically instead.
 - Edit the getty service for tty1 using `sudo systemctl edit getty@tty1`
 - Add the following to your configuration:
@@ -92,7 +92,7 @@ if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
 fi
 ```
 
-## Enable Avahi
+### Enable Avahi
 - `systemctl enable avahi-daemon`
 
 ## Neovim setup
