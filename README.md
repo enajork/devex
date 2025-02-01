@@ -1,4 +1,14 @@
 # Creating a developer workflow for enhanced productivity
+## Contents
+1. a
+2. b
+3. c
+4. d
+5. e
+6. f
+7. g
+
+
 ## What is this?
 This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles.
 ## Why certain tools were used instead of others
