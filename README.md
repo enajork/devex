@@ -1,6 +1,6 @@
 # Creating a developer workflow for enhanced productivity
 ## What is this?
-This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles. Later, I will convert these steps into an installation script to automate the process of setting up my dotfiles and other aspects of the desktop environment on new machines (virtual or physical).
+This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles.
 ## Why certain tools were used instead of others
 Rather than reinventing the wheel, I used off the shelf & open source solutions to create the desktop environment that I desired. In the same spirit of not reinventing anything, I  chose not to spend the time creating a breakdown of pros & cons, and write a verbose explanation of why specific components were chosen. I outsourced this to ChatGPT instead.
 
@@ -13,6 +13,9 @@ ChatGPT actually did an amazing job. Highly recommend using it to write boilerpl
 
 ## What this guide does not cover
 This does not cover how to use your custom desktop enviroment to its full extent. In order to do that, there really is no better way than getting your hands dirty. I might write more about very specific tools or use cases in the future, but it will not be written about in this document.
+
+## Install script
+An install script can be found [here](https://github.com/enajork/install_dotfiles).
 
 ## Installing Arch, Xrdp, & i3
 Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
@@ -102,16 +105,12 @@ fi
 - https://i3wm.org/docs/debugging.html
 
 ## TODO
-- Add screen-grab capabilities
 - Window focus needs to be more obvious. Using xwindow in polybar for the time being. Waiting for PRs to i3 to get merged to fix this. Would rather not have to use something like [xborder](https://github.com/deter0/xborder).
   - https://github.com/i3/i3/issues/4292
   - https://github.com/i3/i3/pull/5384
   - https://github.com/i3/i3/pull/5944 (most recently active - 1 week ago)
   - Now looking into https://github.com/andreykaere/ixwindow too
-- Make installation script to automate setup
-
 ## Future improvements
-- Use Ansible for installation script
 - More aliases
   - Create separate file for aliases
   - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
