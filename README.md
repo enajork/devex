@@ -29,7 +29,11 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
 - Select preferences in `archinstall` script accordingly and begin installation.
 - Most recently, I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
 ### Post-installation of OS
-Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies. Alternatively, you can do the following:
+Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies.
+
+`curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash`
+
+Alternatively, you can do the following:
 - Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed in chroot as a final stage.
 - To get SSH working, run `sudo pacman -S openssh`, `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
 - Next, it is time to install Git. Run `sudo pacman -S --needed git base-devel`.
