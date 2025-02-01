@@ -72,13 +72,13 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - `yay -S pipewire-module-xrdp`
 - Add `exec --no-startup-id /usr/lib/pipewire-module-xrdp/load_pw_modules.sh` to i3 config
 
-### Install AMD graphics drivers
+### Install AMD graphics drivers (only for AMD GPUs)
 - `sudo pacman -S mesa vulkan-radeon libva-mesa-driver libva-utils`
 
 ### Install xstart
 - `sudo pacman -S xorg xorg-server xorg-xinit`
 
-### startx on boot
+### startx on boot (optional)
 Instead of running startx from the tty, or from a display manager, run it on boot directly & automatically instead.
 - Edit the getty service for tty1 using `sudo systemctl edit getty@tty1`
 - Add the following to your configuration:
@@ -96,7 +96,7 @@ if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
 fi
 ```
 
-### Enable Avahi
+### Enable Avahi (only needed for Sunshine)
 - `systemctl enable avahi-daemon`
 
 ## Neovim setup
