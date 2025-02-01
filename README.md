@@ -14,9 +14,6 @@ ChatGPT actually did an amazing job. Highly recommend using it to write boilerpl
 ## What this guide does not cover
 This does not cover how to use your custom desktop enviroment to its full extent. In order to do that, there really is no better way than getting your hands dirty. I might write more about very specific tools or use cases in the future, but it will not be written about in this document.
 
-## Install script
-An install script can be found [here](https://github.com/enajork/install_dotfiles).
-
 ## Installing Arch, Xrdp, & i3
 Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
 
@@ -31,8 +28,8 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
   - `station wlan0 connect SSID`
 - Select preferences in `archinstall` script accordingly and begin installation.
 - Most recently, I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
-### Post-installation
-- Run automated [install script](https://github.com/enajork/devex/blob/main/README.md#install-script) for dotfiles and dependencies
+### Post-installation of OS
+Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies. Alternatively, you can do the following:
 - Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed in chroot as a final stage.
 - To get SSH working, run `sudo pacman -S openssh`, `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
 - Next, it is time to install Git. Run `sudo pacman -S --needed git base-devel`.
