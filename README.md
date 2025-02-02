@@ -1,4 +1,6 @@
+```sh
 curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
+```
 
 # Creating a developer workflow for enhanced productivity
 - [What is this?](https://github.com/enajork/devex/blob/main/README.md#what-is-this)
