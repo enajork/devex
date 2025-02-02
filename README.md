@@ -31,14 +31,14 @@ You can automatically install my dotfiles and required packages using the follow
 curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
 ```
 ## Why Arch, Xorg, i3, & RDP
-A few sections (written by ChatGPT) about why each of these tools were chosen:
+A few sections (written by ChatGPT) about why each of these were chosen:
   1. [Why Arch](https://github.com/enajork/dotfiles-guide/blob/main/ARCH.md)
   2. [Why Xorg](https://github.com/enajork/dotfiles-guide/blob/main/XORG.md)
   3. [Why a tiling window manager](https://github.com/enajork/dotfiles-guide/blob/main/TILING.md)
   4. [Why RDP](https://github.com/enajork/dotfiles-guide/blob/main/REMOTE.md)
 
 ## Installing Arch, Xrdp, & i3
-Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
+Xrdp is not required when running on bare-metal.
 
 Details on how to install Arch can be found [here](https://wiki.archlinux.org/title/Installation_guide).
 - Create Arch installation media USB.
@@ -128,20 +128,22 @@ if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
 fi
 ```
 ## Tailscale & RDP
-- Install [Tailscale](https://tailscale.com/download/) on Linux remote machine and on Mac client.
-- Install [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) on Mac.
-- Now you can use Windows App to remote desktop into your Arch Linux machine. From very limited testing, it seems like power consumption of remote desktop is better than a local workflow with AeroSpace, kitty, and Chrome. Offloading more processing to the server can save battery life depending on the task. This also reinforces the decision to go with a Xorg + RDP setup because it requires less bandwidth/power than VNC + Wayland (Wayland does not have RDP). RDP and Xorg are generally more mature and robust than Wayland and VNC. Even if my primary use case was to use Linux locally instead of remotely, I would still probably not choose Wayland.
+- Install [Tailscale](https://tailscale.com/download/) on Linux remote machine and on Mac client. Tailscale allows users to create their own VPN ("Tailnets") networks in seconds.
+- Install [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) on Mac. This is a RDP client for Mac which can be used with Tailscale to connect to an installation of Arch Linux running these "dots".
 
 ## macOS
 ### AeroSpace
-I still use a Mac laptop whenever I am on the go. While macOS does not offer the same level of customization, it still possible to use a tiling window manager and some of the same [dotfiles](https://github.com/enajork/dotfiles). kitty, nvim, p10, zsh and tmux are all transferable. AeroSpace is a tiling window manager for MacOS. It does not work as well as i3, but it serves its purpose.
-
-On a slightly related note: I toyed with dual booting Fedora Asahi Remix (an M1 compatible distro), but quickly moved away from it. Ultimately, poor battery performance was my reason for switching back to macOS. My personal laptop is the only Mac I use with any semblance of regularity, so it is nice to have a machine to check out the latest features on Mac as well.
+AeroSpace is a tiling window manager for MacOS. I have a basic config for it in my [dotfiles](https://github.com/enajork/dotfiles).
 
 ### kitty
-I've been using iTerm2 for the past few years, but finally switched to using kitty on macOS. To install, either run with `curl` or `brew`:
-- `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
-- `brew install --cask kitty`
+Either:
+```sh
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+```
+Or:
+```sh
+brew install --cask kitty
+```
 
 ### stow
 Install GNU stow on macOS using `brew install stow`.
