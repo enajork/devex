@@ -1,4 +1,4 @@
-Short for developer experience.
+devex is short for developer experience.
 
 ```sh
 curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
