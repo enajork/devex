@@ -24,7 +24,12 @@
 - [Tailscale & RDP](https://github.com/enajork/dotfiles-guide/blob/main/README.md#tailscale--rdp)
 
 ## Intro
-This guide outlines how to install my dotfiles and all the packages required on Arch Linux.
+This guide outlines how to manually install my dotfiles and all the packages required on Arch Linux.
+
+You can automatically install my dotfiles and required packages using the following script on Arch Linux:
+```sh
+curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
+```
 ## Why certain tools were used instead of others
 A few sections (written by ChatGPT) about why each of these tools were chosen:
   1. [Why Arch](https://github.com/enajork/dotfiles-guide/blob/main/ARCH.md)
