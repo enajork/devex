@@ -54,7 +54,9 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
 ### Post-installation of OS
 #### Automated install
 - Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies.
-`curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash`
+```sh
+curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
+```
 
 This automates the rest of the steps below.
 #### SSH and Yay
