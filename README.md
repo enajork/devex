@@ -18,7 +18,7 @@ curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh 
   - [Install xstart](https://github.com/enajork/devex/blob/main/README.md#install-xstart)
   - [startx on boot (optional)](https://github.com/enajork/devex/blob/main/README.md#startx-on-boot-optional)
   - [Enable Avahi (only needed for Sunshine)](https://github.com/enajork/devex/blob/main/README.md#enable-avahi-only-needed-for-sunshine)
-- [Neovim setup](https://github.com/enajork/devex/blob/main/README.md#neovim-setup)
+  - [Neovim setup](https://github.com/enajork/devex/blob/main/README.md#neovim-setup)
 - [Handy links](https://github.com/enajork/devex/blob/main/README.md#handy-links)
 - [TODO](https://github.com/enajork/devex/blob/main/README.md#todo)
 - [Future improvements](https://github.com/enajork/devex/blob/main/README.md#future-improvements)
@@ -27,7 +27,7 @@ curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh 
   - [AeroSpace](https://github.com/enajork/devex/blob/main/README.md#macos)
   - [kitty](https://github.com/enajork/devex/blob/main/README.md#kitty)
   - [stow](https://github.com/enajork/devex/blob/main/README.md#stow)
-  - [Tailscale & RDP](https://github.com/enajork/devex/blob/main/README.md#tailscale--rdp)
+- [Tailscale & RDP](https://github.com/enajork/devex/blob/main/README.md#tailscale--rdp)
 
 ## What is this?
 This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles.
@@ -125,7 +125,7 @@ fi
 ### Enable Avahi (only needed for Sunshine)
 - `systemctl enable avahi-daemon`
 
-## Neovim setup
+### Neovim setup
 - Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
 ## Handy links
@@ -163,7 +163,7 @@ I've been using iTerm2 for the past few years, but finally switched to using kit
 ### stow
 Install GNU stow on macOS using `brew install stow`.
 
-### Tailscale & RDP
+## Tailscale & RDP
 - Install [Tailscale](https://tailscale.com/download/) on Linux remote machine and on Mac client.
 - Install [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) on Mac.
 - Now you can use Windows App to remote desktop into your Arch Linux machine. From very limited testing, it seems like power consumption of remote desktop is better than a local workflow with AeroSpace, kitty, and Chrome. Offloading more processing to the server can save battery life depending on the task. This also reinforces the decision to go with a Xorg + RDP setup because it requires less bandwidth/power than VNC + Wayland (Wayland does not have RDP). RDP and Xorg are generally more mature and robust than Wayland and VNC. Even if my primary use case was to use Linux locally instead of remotely, I would still probably not choose Wayland.
