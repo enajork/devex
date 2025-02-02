@@ -1,4 +1,4 @@
-# Dotfile guide
+# Dotfiles guide
 - [Intro](https://github.com/enajork/devex/blob/main/README.md#intro)
 - [Why certain tools were used instead of others](https://github.com/enajork/devex/blob/main/README.md#what-is-this)
 - [Installing Arch, Xrdp, & i3](https://github.com/enajork/devex/blob/main/README.md#installing-arch-xrdp--i3)
