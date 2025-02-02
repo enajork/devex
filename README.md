@@ -1,5 +1,7 @@
 devex is short for developer experience.
 
+On Arch Linux, you can install my dotfiles using the following command:
+
 ```sh
 curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
 ```
