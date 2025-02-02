@@ -15,12 +15,12 @@ curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh 
     - [i3](https://github.com/enajork/devex/blob/main/README.md#i3)
     - [Customization](https://github.com/enajork/devex/blob/main/README.md#customization)
     - [Pipewire audio over Xrdp](https://github.com/enajork/devex/blob/main/README.md#pipewire-audio-over-xrdp)
+    - [Enable Avahi (only needed for Sunshine)](https://github.com/enajork/devex/blob/main/README.md#enable-avahi-only-needed-for-sunshine)
     - [Install AMD graphics drivers (only for AMD GPUs)](https://github.com/enajork/devex/blob/main/README.md#install-amd-graphics-drivers-only-for-amd-gpus)
     - [Install xstart](https://github.com/enajork/devex/blob/main/README.md#install-xstart)
-    - [startx on boot (optional)](https://github.com/enajork/devex/blob/main/README.md#startx-on-boot-optional)
-    - [Enable Avahi (only needed for Sunshine)](https://github.com/enajork/devex/blob/main/README.md#enable-avahi-only-needed-for-sunshine)
     - [Neovim setup](https://github.com/enajork/devex/blob/main/README.md#neovim-setup)
-- [SSH without entering password](https://github.com/enajork/devex/blob/main/README.md#ssh-without-entering-password)
+  - [SSH without entering password](https://github.com/enajork/devex/blob/main/README.md#ssh-without-entering-password)
+  - [startx on boot (optional)](https://github.com/enajork/devex/blob/main/README.md#startx-on-boot-optional)
 - [Handy links](https://github.com/enajork/devex/blob/main/README.md#handy-links)
 - [TODO](https://github.com/enajork/devex/blob/main/README.md#todo)
 - [Future improvements](https://github.com/enajork/devex/blob/main/README.md#future-improvements)
@@ -56,11 +56,12 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
 - Select preferences in `archinstall` script accordingly and begin installation.
 - Most recently, I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
 ### Post-installation of OS
-#### 
+#### Automated install
 - Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies.
 `curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash`
-#### 
-- Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed in chroot as a final stage.
+
+This automates the rest of the steps below.
+#### SSH and Yay
 - To get SSH working, run `sudo pacman -S openssh`, `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
 - Next, it is time to install Git. Run `sudo pacman -S --needed git base-devel`.
 - Git is a prerequisite for installing yay. To install yay, run the following:
