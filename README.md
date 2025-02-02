@@ -11,16 +11,16 @@ curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh 
 - [Why certain tools were used instead of others](https://github.com/enajork/devex/blob/main/README.md#what-is-this)
 - [Installing Arch, Xrdp, & i3](https://github.com/enajork/devex/blob/main/README.md#installing-arch-xrdp--i3)
   - [Post-installation of OS](https://github.com/enajork/devex/blob/main/README.md#installing-arch-xrdp--i3)
-  - [Xrdp](https://github.com/enajork/devex/blob/main/README.md#xrdp)
-  - [i3](https://github.com/enajork/devex/blob/main/README.md#i3)
-- [Customization](https://github.com/enajork/devex/blob/main/README.md#customization)
-  - [SSH without entering password](https://github.com/enajork/devex/blob/main/README.md#ssh-without-entering-password)
-  - [Pipewire audio over Xrdp](https://github.com/enajork/devex/blob/main/README.md#pipewire-audio-over-xrdp)
-  - [Install AMD graphics drivers (only for AMD GPUs)](https://github.com/enajork/devex/blob/main/README.md#install-amd-graphics-drivers-only-for-amd-gpus)
-  - [Install xstart](https://github.com/enajork/devex/blob/main/README.md#install-xstart)
-  - [startx on boot (optional)](https://github.com/enajork/devex/blob/main/README.md#startx-on-boot-optional)
-  - [Enable Avahi (only needed for Sunshine)](https://github.com/enajork/devex/blob/main/README.md#enable-avahi-only-needed-for-sunshine)
-  - [Neovim setup](https://github.com/enajork/devex/blob/main/README.md#neovim-setup)
+    - [Xrdp](https://github.com/enajork/devex/blob/main/README.md#xrdp)
+    - [i3](https://github.com/enajork/devex/blob/main/README.md#i3)
+    - [Customization](https://github.com/enajork/devex/blob/main/README.md#customization)
+    - [Pipewire audio over Xrdp](https://github.com/enajork/devex/blob/main/README.md#pipewire-audio-over-xrdp)
+    - [Install AMD graphics drivers (only for AMD GPUs)](https://github.com/enajork/devex/blob/main/README.md#install-amd-graphics-drivers-only-for-amd-gpus)
+    - [Install xstart](https://github.com/enajork/devex/blob/main/README.md#install-xstart)
+    - [startx on boot (optional)](https://github.com/enajork/devex/blob/main/README.md#startx-on-boot-optional)
+    - [Enable Avahi (only needed for Sunshine)](https://github.com/enajork/devex/blob/main/README.md#enable-avahi-only-needed-for-sunshine)
+    - [Neovim setup](https://github.com/enajork/devex/blob/main/README.md#neovim-setup)
+- [SSH without entering password](https://github.com/enajork/devex/blob/main/README.md#ssh-without-entering-password)
 - [Handy links](https://github.com/enajork/devex/blob/main/README.md#handy-links)
 - [TODO](https://github.com/enajork/devex/blob/main/README.md#todo)
 - [Future improvements](https://github.com/enajork/devex/blob/main/README.md#future-improvements)
@@ -35,10 +35,11 @@ curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh 
 This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles. This recipe book has the purpose of being a reference when creating install scripts as well.
 
 ## Why certain tools were used instead of others
-1. [Why Arch](https://github.com/enajork/devex/blob/main/ARCH.md)
-2. [Why Xorg](https://github.com/enajork/devex/blob/main/XORG.md)
-3. [Why a tiling window manager](https://github.com/enajork/devex/blob/main/TILING.md)
-4. [Why RDP](https://github.com/enajork/devex/blob/main/REMOTE.md)
+A few sections (written by ChatGPT) about why each of these tools were chosen:
+  1. [Why Arch](https://github.com/enajork/devex/blob/main/ARCH.md)
+  2. [Why Xorg](https://github.com/enajork/devex/blob/main/XORG.md)
+  3. [Why a tiling window manager](https://github.com/enajork/devex/blob/main/TILING.md)
+  4. [Why RDP](https://github.com/enajork/devex/blob/main/REMOTE.md)
 
 ## Installing Arch, Xrdp, & i3
 Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
@@ -55,29 +56,27 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
 - Select preferences in `archinstall` script accordingly and begin installation.
 - Most recently, I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
 ### Post-installation of OS
-Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies.
-
+#### 
+- Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies.
 `curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash`
-
-Running the previous command concludes the setup as described on this page. Feel free to keep reading or to close the document.
-
+#### 
 - Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed in chroot as a final stage.
 - To get SSH working, run `sudo pacman -S openssh`, `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
 - Next, it is time to install Git. Run `sudo pacman -S --needed git base-devel`.
 - Git is a prerequisite for installing yay. To install yay, run the following:
-  - `git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si`
-### Xrdp
+  - `git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si` 
+#### Xrdp
 - Next install Xrdp using the following instructions:
   - https://wiki.archlinux.org/title/Xrdp
     - Install `xrdp` and `xorgxrdp` using `yay -S xrdp xorgxrdp`.
     - Create `~/.xinitrc` and add the one-liner `exec i3`.
     - Run `sudo systemctl enable xrdp` and `sudo systemctl start xrdp`.
   - Remote desktop should now start your desired window manager when connected. Next we will need to configure i3 for Xrdp.
-### i3
+#### i3
 - Run `sudo pacman -S i3` to install i3.
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The next step is customization.
-## Customization
+#### Customization
 - Install some dependencies - `yay -Sy fastfetch fzf kitty maim picom polybar rofi tmux xorg-xrdb xclip zsh`.
 - Install tmux package manager (tpm) - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Install Oh My Zsh with `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
@@ -91,20 +90,26 @@ That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum inst
 - Install dark mode https://wiki.archlinux.org/title/Dark_mode_switching
   - `yay -S qt6-base qt5-base gtk4 gtk3 gnome-themes-extra adwaita-qt5-git adwaita-qt6-git`
   - Add dark mode exports to Zsh as described in the Arch Wiki page (or use `stow zsh`).
- 
-### SSH without entering password
-- Run `ssh-keygen`.
-- Run `ssh-copy-id remote_username@remote_server_ip_address`.
 
-### Pipewire audio over Xrdp
+#### Pipewire audio over Xrdp
 - `yay -S pipewire-module-xrdp`
 - Add `exec --no-startup-id /usr/lib/pipewire-module-xrdp/load_pw_modules.sh` to i3 config
 
-### Install AMD graphics drivers (only for AMD GPUs)
+#### Enable Avahi (only needed for Sunshine)
+- `systemctl enable avahi-daemon`
+
+#### Install AMD graphics drivers (only for AMD GPUs)
 - `sudo pacman -S mesa vulkan-radeon libva-mesa-driver libva-utils`
 
-### Install xstart
+#### Install xstart
 - `sudo pacman -S xorg xorg-server xorg-xinit`
+
+#### Neovim setup
+- Start by installing [LazyVim](https://www.lazyvim.org/installation)
+
+### SSH without entering password
+- Run `ssh-keygen`.
+- Run `ssh-copy-id remote_username@remote_server_ip_address`.
 
 ### startx on boot (optional)
 Instead of running startx from the tty, or from a display manager, run it on boot directly & automatically instead.
@@ -123,12 +128,6 @@ if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
     exec startx
 fi
 ```
-
-### Enable Avahi (only needed for Sunshine)
-- `systemctl enable avahi-daemon`
-
-### Neovim setup
-- Start by installing [LazyVim](https://www.lazyvim.org/installation)
 
 ## Handy links
 - https://i3wm.org/docs/debugging.html
