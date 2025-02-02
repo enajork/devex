@@ -5,7 +5,7 @@
   - [Post-installation of OS](https://github.com/enajork/dotfiles-guide/blob/main/README.md#installing-arch-xrdp--i3)
     - [Xrdp](https://github.com/enajork/dotfiles-guide/blob/main/README.md#xrdp)
     - [i3](https://github.com/enajork/dotfiles-guide/blob/main/README.md#i3)
-    - [Customization](https://github.com/enajork/dotfiles-guide/blob/main/README.md#customization)
+    - [Essential packages](https://github.com/enajork/dotfiles-guide/blob/main/README.md#essential-packages)
     - [Pipewire audio over Xrdp](https://github.com/enajork/dotfiles-guide/blob/main/README.md#pipewire-audio-over-xrdp)
     - [Enable Avahi (only needed for Sunshine)](https://github.com/enajork/dotfiles-guide/blob/main/README.md#enable-avahi-only-needed-for-sunshine)
     - [Install AMD graphics drivers (only for AMD GPUs)](https://github.com/enajork/dotfiles-guide/blob/main/README.md#install-amd-graphics-drivers-only-for-amd-gpus)
@@ -75,7 +75,7 @@ This automates the rest of the steps below.
 - Run `sudo pacman -S i3` to install i3.
 - Change `~/.xinitrc` to `exec i3`. Restart xrdp using `sudo systemctl restart xrdp` to pick up changes.
 That's it. Arch, Xrdp, and i3 have been installed. This is the bare minimum install and starting point for everything to come. The next step is customization.
-#### Customization
+#### Essential packages
 - Install some dependencies - `yay -Sy fastfetch fzf kitty maim picom polybar rofi tmux xorg-xrdb xclip zsh`.
 - Install tmux package manager (tpm) - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Install Oh My Zsh with `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`.
