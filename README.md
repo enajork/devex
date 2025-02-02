@@ -1,3 +1,5 @@
+Short for developer experience.
+
 ```sh
 curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
 ```
