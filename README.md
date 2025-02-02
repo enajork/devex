@@ -30,7 +30,7 @@ You can automatically install my dotfiles and required packages using the follow
 ```sh
 curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
 ```
-## Why certain tools were used instead of others
+## Why Arch, Xorg, i3, & RDP
 A few sections (written by ChatGPT) about why each of these tools were chosen:
   1. [Why Arch](https://github.com/enajork/dotfiles-guide/blob/main/ARCH.md)
   2. [Why Xorg](https://github.com/enajork/dotfiles-guide/blob/main/XORG.md)
@@ -148,9 +148,11 @@ Install GNU stow on macOS using `brew install stow`.
  
 ## Known issues
 - picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16 - still having this issue but it is not severe enough to ditch picom.
-- ~~Some picom issue that causes windows to disappear when they are tiled with transparency enabled~~ Fixed by using `use-damage = false;` setting.
-- ~~picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)).~~ Fixed by installing GTK.
-- Mouse warping does not work while using RDP. This is an inherent limitation. I might consider moving away from RDP and simply running Arch locally in the future.
+- ~~Some picom issue that causes windows to disappear when they are tiled with transparency enabled~~
+  - Fixed by using `use-damage = false;` setting.
+- ~~picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)).~~
+  - Fixed by installing GTK.
+- Mouse warping does not work while using RDP. This is an inherent limitation.
 
 ## Future improvements
 - More aliases
