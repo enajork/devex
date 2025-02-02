@@ -129,27 +129,10 @@ if [[ -z $DISPLAY ]] && [[ $(tty) == /dev/tty1 ]]; then
     exec startx
 fi
 ```
-
-## Handy links
-- https://i3wm.org/docs/debugging.html
-
-## TODO
-- Window focus needs to be more obvious. Using xwindow in polybar for the time being. Waiting for PRs to i3 to get merged to fix this. Would rather not have to use something like [xborder](https://github.com/deter0/xborder).
-  - https://github.com/i3/i3/issues/4292
-  - https://github.com/i3/i3/pull/5384
-  - https://github.com/i3/i3/pull/5944 (most recently active - 1 week ago)
-  - Now looking into https://github.com/andreykaere/ixwindow too
-## Future improvements
-- More aliases
-  - Create separate file for aliases
-  - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
-- Switch to btrfs instead of ext4
-
-## Known issues
-- picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16 - still having this issue but it is not severe enough to ditch picom.
-- ~~Some picom issue that causes windows to disappear when they are tiled with transparency enabled~~ Fixed by using `use-damage = false;` setting.
-- ~~picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)).~~ Fixed by installing GTK.
-- Mouse warping does not work while using RDP. This is an inherent limitation. I might consider moving away from RDP and simply running Arch locally in the future.
+## Tailscale & RDP
+- Install [Tailscale](https://tailscale.com/download/) on Linux remote machine and on Mac client.
+- Install [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) on Mac.
+- Now you can use Windows App to remote desktop into your Arch Linux machine. From very limited testing, it seems like power consumption of remote desktop is better than a local workflow with AeroSpace, kitty, and Chrome. Offloading more processing to the server can save battery life depending on the task. This also reinforces the decision to go with a Xorg + RDP setup because it requires less bandwidth/power than VNC + Wayland (Wayland does not have RDP). RDP and Xorg are generally more mature and robust than Wayland and VNC. Even if my primary use case was to use Linux locally instead of remotely, I would still probably not choose Wayland.
 
 ## macOS
 ### AeroSpace
@@ -164,8 +147,24 @@ I've been using iTerm2 for the past few years, but finally switched to using kit
 
 ### stow
 Install GNU stow on macOS using `brew install stow`.
+ 
+## Known issues
+- picom flickers when changing workspaces - https://github.com/yshui/picom/issues/16 - still having this issue but it is not severe enough to ditch picom.
+- ~~Some picom issue that causes windows to disappear when they are tiled with transparency enabled~~ Fixed by using `use-damage = false;` setting.
+- ~~picom draws ugly black boxes around context & dropdown menus in chromium (similar to this [issue](https://github.com/orgs/regolith-linux/discussions/949)).~~ Fixed by installing GTK.
+- Mouse warping does not work while using RDP. This is an inherent limitation. I might consider moving away from RDP and simply running Arch locally in the future.
 
-## Tailscale & RDP
-- Install [Tailscale](https://tailscale.com/download/) on Linux remote machine and on Mac client.
-- Install [Windows App](https://apps.apple.com/us/app/windows-app/id1295203466?mt=12) on Mac.
-- Now you can use Windows App to remote desktop into your Arch Linux machine. From very limited testing, it seems like power consumption of remote desktop is better than a local workflow with AeroSpace, kitty, and Chrome. Offloading more processing to the server can save battery life depending on the task. This also reinforces the decision to go with a Xorg + RDP setup because it requires less bandwidth/power than VNC + Wayland (Wayland does not have RDP). RDP and Xorg are generally more mature and robust than Wayland and VNC. Even if my primary use case was to use Linux locally instead of remotely, I would still probably not choose Wayland.
+## Future improvements
+- More aliases
+  - Create separate file for aliases
+  - https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/archlinux
+
+## TODO
+- Window focus needs to be more obvious. Using xwindow in polybar for the time being. Waiting for PRs to i3 to get merged to fix this. Would rather not have to use something like [xborder](https://github.com/deter0/xborder).
+  - https://github.com/i3/i3/issues/4292
+  - https://github.com/i3/i3/pull/5384
+  - https://github.com/i3/i3/pull/5944 (most recently active - 1 week ago)
+  - Now looking into https://github.com/andreykaere/ixwindow too
+
+## Handy links
+- https://i3wm.org/docs/debugging.html
