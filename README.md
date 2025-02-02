@@ -1,28 +1,37 @@
 # Creating a developer workflow for enhanced productivity
 ## Contents
-1. a
-2. b
-3. c
-4. d
-5. e
-6. f
-7. g
-
+1. [What is this?](https://github.com/enajork/devex/blob/main/README.md#what-is-this)
+2. [Why certain tools were used instead of others](https://github.com/enajork/devex/blob/main/README.md#what-is-this)
+3. [Installing Arch, Xrdp, & i3](https://github.com/enajork/devex/blob/main/README.md#installing-arch-xrdp--i3)
+4. [Post-installation of OS](https://github.com/enajork/devex/blob/main/README.md#installing-arch-xrdp--i3)
+5. [Xrdp](https://github.com/enajork/devex/blob/main/README.md#xrdp)
+6. [i3](https://github.com/enajork/devex/blob/main/README.md#i3)
+7. [Customization](https://github.com/enajork/devex/blob/main/README.md#customization)
+8. [SSH without entering password](https://github.com/enajork/devex/blob/main/README.md#ssh-without-entering-password)
+9. [Pipewire audio over Xrdp](https://github.com/enajork/devex/blob/main/README.md#pipewire-audio-over-xrdp)
+10. [Install AMD graphics drivers (only for AMD GPUs)](https://github.com/enajork/devex/blob/main/README.md#install-amd-graphics-drivers-only-for-amd-gpus)
+11. [Install xstart](https://github.com/enajork/devex/blob/main/README.md#install-xstart)
+12. [startx on boot (optional)](https://github.com/enajork/devex/blob/main/README.md#startx-on-boot-optional)
+13. [Enable Avahi (only needed for Sunshine)](https://github.com/enajork/devex/blob/main/README.md#enable-avahi-only-needed-for-sunshine)
+14. [Neovim setup](https://github.com/enajork/devex/blob/main/README.md#neovim-setup)
+15. [Handy links](https://github.com/enajork/devex/blob/main/README.md#handy-links)
+16. [TODO](https://github.com/enajork/devex/blob/main/README.md#todo)
+17. [Future improvements](https://github.com/enajork/devex/blob/main/README.md#future-improvements)
+18. [Known issues](https://github.com/enajork/devex/blob/main/README.md#known-issues)
+19. [macOS](https://github.com/enajork/devex/blob/main/README.md#macos)
+20. [AeroSpace](https://github.com/enajork/devex/blob/main/README.md#macos)
+21. [kitty](https://github.com/enajork/devex/blob/main/README.md#kitty)
+22. [stow](https://github.com/enajork/devex/blob/main/README.md#stow)
+23. [Tailscale & RDP](https://github.com/enajork/devex/blob/main/README.md#tailscale--rdp)
 
 ## What is this?
 This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles.
-## Why certain tools were used instead of others
-Rather than reinventing the wheel, I used off the shelf & open source solutions to create the desktop environment that I desired. In the same spirit of not reinventing anything, I  chose not to spend the time creating a breakdown of pros & cons, and write a verbose explanation of why specific components were chosen. I outsourced this to ChatGPT instead.
 
+## Why certain tools were used instead of others
 1. [Why Arch](https://github.com/enajork/devex/blob/main/ARCH.md)
 2. [Why Xorg](https://github.com/enajork/devex/blob/main/XORG.md)
 3. [Why a tiling window manager](https://github.com/enajork/devex/blob/main/TILING.md)
 4. [Why RDP](https://github.com/enajork/devex/blob/main/REMOTE.md)
-
-ChatGPT actually did an amazing job. Highly recommend using it to write boilerplate documentation/text.
-
-## What this guide does not cover
-This does not cover how to use your custom desktop enviroment to its full extent. In order to do that, there really is no better way than getting your hands dirty. I might write more about very specific tools or use cases in the future, but it will not be written about in this document.
 
 ## Installing Arch, Xrdp, & i3
 Note: Xrdp is not required if you intend on running Arch directly as your primary OS (or using dual boot) and do not need remote access to your Arch install. Xrdp can be useful if running in a VM.
