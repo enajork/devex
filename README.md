@@ -50,7 +50,6 @@ Details on how to install Arch can be found [here](https://wiki.archlinux.org/ti
   - `station wlan0 get-networks`
   - `station wlan0 connect SSID`
 - Select preferences in `archinstall` script accordingly and begin installation.
-- Most recently, I chose to use ext4 for the file system and to skip installation of `NetworkManager` (used ISO settings instead). It is possible to install `NetworkManager` after Arch.
 ### Post-installation of OS
 #### Automated install
 - Run [script](https://github.com/enajork/install_dotfiles) to automatically install dotfiles and dependencies.
