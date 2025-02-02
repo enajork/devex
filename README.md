@@ -51,7 +51,7 @@ Run [script](https://github.com/enajork/install_dotfiles) to automatically insta
 
 `curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash`
 
-Alternatively, you can do the following:
+Alternatively, you can follow the rest of this document.
 - Once installation is complete, you may reboot. Alternatively, `archinstall` allows for post-installation steps to be completed in chroot as a final stage.
 - To get SSH working, run `sudo pacman -S openssh`, `sudo systemctl enable sshd` and `sudo systemctl start sshd`.
 - Next, it is time to install Git. Run `sudo pacman -S --needed git base-devel`.
