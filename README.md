@@ -26,9 +26,6 @@
 ## What is this?
 This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles. This recipe book has the purpose of being a reference when creating install scripts as well.
 
-
-devex is short for developer experience.
-
 On Arch Linux, you can install my dotfiles using the following command:
 
 ```sh
