@@ -1,5 +1,5 @@
-# Creating a developer workflow for enhanced productivity
-- [What is this?](https://github.com/enajork/devex/blob/main/README.md#what-is-this)
+# Dotfile guide
+- [Intro](https://github.com/enajork/devex/blob/main/README.md#intro)
 - [Why certain tools were used instead of others](https://github.com/enajork/devex/blob/main/README.md#what-is-this)
 - [Installing Arch, Xrdp, & i3](https://github.com/enajork/devex/blob/main/README.md#installing-arch-xrdp--i3)
   - [Post-installation of OS](https://github.com/enajork/devex/blob/main/README.md#installing-arch-xrdp--i3)
@@ -23,15 +23,8 @@
   - [stow](https://github.com/enajork/devex/blob/main/README.md#stow)
 - [Tailscale & RDP](https://github.com/enajork/devex/blob/main/README.md#tailscale--rdp)
 
-## What is this?
-This is a collection of living documents that I started writing initially to serve as a recipe book of sorts. It was just a place for me to record the exact steps I used to create my ideal desktop enviroment in addition to creating my dotfiles. This recipe book has the purpose of being a reference when creating install scripts as well.
-
-On Arch Linux, you can install my dotfiles using the following command:
-
-```sh
-curl -sL https://raw.githubusercontent.com/enajork/install_dotfiles/main/run.sh | bash
-```
-This repo is the manual guide of how to install my dotfiles from scratch.
+## Intro
+This guide outlines how to install my dotfiles and all the packages required on Arch Linux.
 ## Why certain tools were used instead of others
 A few sections (written by ChatGPT) about why each of these tools were chosen:
   1. [Why Arch](https://github.com/enajork/devex/blob/main/ARCH.md)
